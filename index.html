@@ -61,34 +61,10 @@
 </head>
 <body class="bg-gradient-to-b from-slate-100 to-slate-50">
 
-    <header class="container w-10/12 mx-auto mb-24 ">
+    <header class="container w-10/12 mx-auto mb-24 pt-7 ">
         <div class="navbar">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-                </ul>
-              </div>
+              
               <div class="flex items-center gap-2">
                 <div class="rounded-full bg-button-colore flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i></div>
                 <div><a class="text-3xl font-bold">Rinterio</a></div>
@@ -104,10 +80,24 @@
               </ul>
             </div>
             <div class="navbar-end gap-2">
-                <div class=" hidden lg:rounded-full  bg-white flex justify-center items-center  h-[40px] w-[40px]"><i class="fa-solid fa-magnifying-glass text-xl"></i></i></div>
-                <div class="hidden lg:rounded-full  bg-white  flex justify-center items-center  h-[40px] w-[40px]"><i class="fa-solid fa-cart-shopping text-xl"></i></div>
-                <div>
-                    <a class="hidden lg:btn rounded-full bg-button-colore text-base font-bold">Book Consult <div class="rounded-full bg-black flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl text-white"></i></div></a>
+                <div class=" hidden sm:block rounded-full  bg-white lg:flex justify-center items-center  h-[40px] w-[40px]"><i class="fa-solid fa-magnifying-glass text-xl"></i></i></div>
+                <div class="hidden sm:block rounded-full  bg-white  lg:flex justify-center items-center  h-[40px] w-[40px]"><i class="fa-solid fa-cart-shopping text-xl"></i></div>
+                <div class="flex items-center">
+                    <a class="hidden sm:block btn lg:flex rounded-full  bg-button-colore text-base font-bold">Book Consult <div class="rounded-full bg-black flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl text-white"></i></div></a>
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost rounded-full bg-white flex justify-center items-center h-[45px] w-[45px] lg:hidden">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Home</a></li>
+                       <li><a>Services</a></li>
+                       <li><a>Portfolio</a></li>
+                       <li><a>Blogs</a></li>
+                       <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
                 </div>
             </div>
        </div>
@@ -118,7 +108,7 @@
 
         </div>
         <div class="text-center space-y-7">
-            <h1 class="text-5xl font-bold my-5">A barn house of this design has a <br> striking appearance</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold my-5">A barn house of this design has a <br> striking appearance</h1>
             <p class="text-sm text-gray-500 my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
             <div>
                 <a class="btn rounded-full bg-btn-colore text-base">View Details <div class="rounded-full bg-button-colore flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i></div></a>
@@ -134,7 +124,7 @@
 
             <div class=" grid grid-cols-1 lg:flex justify-between items-center gap-6 lg:h-[560px] ">
               <div class="lg:relative">
-                <div class="hidden lg:absolute -left-16 -top-14"><img src="images/Vector.png" alt=""></div>
+                <div class="hidden sm:block lg:absolute -left-16 -top-14"><img src="images/Vector.png" alt=""></div>
                  <div>
                     <a class="btn rounded-full bg-white text-base"><i class="fa-solid fa-arrow-right text-xl"></i> About Us </a>
                  </div>
@@ -250,7 +240,9 @@
             </div>
 
              <div class="grid grid-cols-1  lg:grid lg:grid-cols-12 gap-5 mb-5">
-                <div class="bg-white lg:col-span-3 border lg:h-[235px] rounded-xl p-5"><img class=" h-[240px] lg:h-[190px]" src="images/img3.png" alt=""></div>
+                
+                <div class="lg:hidden bg-white lg:col-span-3 border rounded-xl p-5"><img class=" h-[240px]" src="images/img5.png" alt=""></div>
+                <div class="hidden sm:block bg-white lg:col-span-3 border lg:h-[235px] rounded-xl p-5"><img class=" h-[240px] lg:h-[190px]" src="images/img3.png" alt=""></div>
 
                 <div class="bg-white space-y-3 lg:col-span-6 border rounded-xl lg:h-[235px] p-5 lg:flex justify-start gap-5">
                   <img src="images/img4.png" alt="">
@@ -265,16 +257,93 @@
                   </div>
                 </div>
 
-                <div class="bg-white lg:col-span-3  border rounded-xl lg:h-[235px] p-5">
+                <div class="hidden sm:block bg-white lg:col-span-3  border rounded-xl lg:h-[235px] p-5">
                   <img class=" h-[240px] lg:h-[190px]" src="images/img5.png" alt="">
                 </div>
+                <div class="lg:hidden bg-white lg:col-span-3  border rounded-xl lg:h-[235px] p-5">
+                  <img class=" h-[240px] lg:h-[190px]" src="images/img3.png" alt="">
+                </div>
 
-                <div class="lg:hidden bg-white lg:col-span-3 border rounded-xl p-5"><img class=" h-[240px]" src="images/img3.png" alt=""></div>
+
+                <div class="lg:hidden bg-white lg:col-span-3 border rounded-xl p-5"><img class=" h-[240px]" src="images/img5.png" alt=""></div>
 
 
               </div>
 
 
+
+          </div>
+        </section>
+
+
+        <section class=" bg-gradient-to-b from-slate-100 to-slate-50 p-10">
+          <div class="container w-10/12 mx-auto">
+            <div class="text-center">
+              <div class="my-5">
+                <a class="btn rounded-full bg-btn2-colore text-base"><i class="fa-solid fa-arrow-right"></i> Explore our Latest 3D works </a>
+             </div>
+             <h1 class="text-4xl font-bold mb-5">Our Latest 3D House Portfolio</h1>
+             <p class="text-sm text-gray-500 mb-5">3D interior design is the representation of a fully furnished and decorated room  including <br>lighting, textures, and materials from a 3D perspective.</p>
+  
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+
+              
+
+              <div class="card bg-base-100 w-[300px] h-[400px] shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/3d-house1.avif"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start text-start">
+                  <h2 class="card-title">3D-House design</h2>
+                  <p class="text-sm text-gray-500">Make your House More Beautiful With Our Design.</p>
+                  <div>
+                    <a class="btn rounded-full bg-white border-0 text-base">Read More...<div class="rounded-full bg-button-colore flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i></div></a>
+                 </div>
+                </div>
+             </div>   
+                
+              <div class="card bg-base-100 w-[300px] h-[400px] shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/3d-house3.jpeg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start text-start">
+                  <h2 class="card-title">3D-House design</h2>
+                  <p class="text-sm text-gray-500">Make your House More Beautiful With Our Design.</p>
+                  <div>
+                    <a class="btn rounded-full bg-white border-0 text-base">Read More...<div class="rounded-full bg-button-colore flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i></div></a>
+                 </div>
+                </div>
+             </div>   
+                
+              <div class="card bg-base-100 w-[300px] h-[400px] shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/3d-house4.jpg"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-start text-start">
+                  <h2 class="card-title">3D-House design</h2>
+                  <p class="text-sm text-gray-500">Make your House More Beautiful With Our Design.</p>
+                  <div>
+                    <a class="btn rounded-full bg-white border-0 text-base">Read More...<div class="rounded-full bg-button-colore flex justify-center items-center h-[35px] w-[35px]"><i class="fa-solid fa-arrow-right -rotate-45  text-xl"></i></div></a>
+                 </div>
+                </div>
+             </div>   
+                
+                  
+              
+
+            </div>
 
           </div>
         </section>
